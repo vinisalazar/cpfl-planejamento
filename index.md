@@ -368,7 +368,8 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Cronograma</h2>
 
-{% if site.carpentry == "swc" %}
+{% include custom-schedule.html %}
+<!-- {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
@@ -381,7 +382,7 @@ Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
 how one of these schedule tables is constructed.
 {% endcomment %}
-{% endif %}
+{% endif %} -->
 
 <hr/>
 
