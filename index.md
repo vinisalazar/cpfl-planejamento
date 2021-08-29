@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "CPFL - Regulatório"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "CPFL - Setor Regulatório"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "https://meet.google.com/xxx-xxxx-xxx"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "BR"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "PT"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
@@ -16,7 +16,7 @@ enddate: 2021-10-28        # machine-readable end date for the workshop in YYYY-
 instructor: ["Vinícius Salazar"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper:     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["vinicius.salazar@thexlab.com.br"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+collaborative_notes: https://docs.google.com/document/d/1UioUVVCQtwGj76vi1tlwNdngyZp3hx1VBdhbBgVQOF0/edit?usp=sharing  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -310,10 +310,10 @@ Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Notas colaborativas</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para comunicação, notas, e compartilhar URLs e pedaços de código.
 </p>
 <hr/>
 {% endif %}
@@ -340,8 +340,6 @@ change the value of `carpentry` to `pilot`.
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %} -->
-
-<hr/>
 
 
 {% comment %}
@@ -402,23 +400,13 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+Para participar do treinamento, você vai precisar instalar o Anaconda no seu sistema, como descrito abaixo.
 </p>
-<p>
+<!-- <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
+</p> -->
 
 {% comment %}
 For online workshops, the section below provides:
@@ -434,7 +422,7 @@ to include the relevant installation instrucctions.
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
 
-{% comment %}
+<!-- {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
@@ -449,4 +437,4 @@ during the workshop.
 Please check the "Setup" page of
 [the lesson site]({{ site.lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
-{% endif %}
+{% endif %} -->
