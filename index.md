@@ -313,7 +313,7 @@ available at https://codimd.carpentries.org
 <h2 id="collaborative_notes">Notas colaborativas</h2>
 
 <p>
-Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para comunicação, notas, e compartilhar URLs e pedaços de código.
+Vamos usar esse <a href="{{ page.collaborative_notes }}">documento colaborativo</a> para comunicação, notas, e compartilhar URLs e pedaços de código. **Para poder utilizar as notas, por favor crie uma conta no HackMD com o email que você está utilizando no curso.**
 </p>
 <hr/>
 {% endif %}
