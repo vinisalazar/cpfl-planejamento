@@ -194,7 +194,9 @@ Modify the block below if there are any special requirements.
   {% endif %}
   É necessário fazer a prévia instalação do software necessário (listado <a href="#setup">abaixo</a>).
 </p>
-
+<p id="alternative">
+  <strong>Alternativa:</strong> <a href="https://mybinder.org/v2/gh/vinisalazar/cpfl-workspace/HEAD"><img src="https://mybinder.org/badge_logo.svg" /></a>
+</p>
 <!-- {% comment %}
 ACCESSIBILITY
 
